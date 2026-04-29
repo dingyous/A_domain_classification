@@ -17,7 +17,7 @@ This tool classifies these domain types directly from amino-acid sequences using
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Xinyingtsai/A_domain_classification.git
+git clone https://github.com/dingyous/A_domain_classification.git
 cd A_domain_classification
 ```
 
