@@ -1,0 +1,11 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+xgboost
+umap-learn
+biopython
+openpyxl
+torch
+fair-esm
+jupyter
