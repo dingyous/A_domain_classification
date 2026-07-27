@@ -51,7 +51,7 @@ python -m pip install fair-esm
 - **data/**  
   Contains input FASTA files (domain sequences).
 
-- **model/**  
+- **saved_models_A_vs_KAL/**  
   Stores trained machine learning classifiers (`.pkl` files) for reuse without retraining.
 
 - **A_domain_prediction_KAL.ipynb**  
