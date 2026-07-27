@@ -1,15 +1,16 @@
-# A Domain Classification (A vs Ak vs CAL)
+# A Domain Classification (A vs KAL)
 
 ## Overview
 
-Adenylation-related domains in NRPS systems—including canonical A domains, specialized adenylation (Ak) domains, and coenzyme A ligase (CAL) domains—are evolutionarily related enzyme modules involved in substrate activation, but differ in substrate preference and catalytic architecture. 
-This tool classifies these domain types directly from amino-acid sequences using protein language model embeddings and machine learning models.
+Canonical adenylation (A) domains and 2-keto acid AMP ligase (KAL) domains are evolutionarily related enzyme modules involved in substrate activation but differ in substrate preferences and catalytic functions.
+
+This tool distinguishes A domains from KAL domains directly from amino acid sequences using protein language model embeddings and machine learning models.
 
 **Key features**
 - Sequence-based domain classification
 - ESM-2 protein language model embeddings
 - Multiple classifiers (Logistic Regression, SVM, Random Forest, XGBoost)
-- Multiclass classification (A / Ak / CAL)
+- Binary classification (KAL/A)
 
 
 ## Installation
@@ -53,12 +54,7 @@ python -m pip install fair-esm
 - **model/**  
   Stores trained machine learning classifiers (`.pkl` files) for reuse without retraining.
 
-- **CAL_A_domain_prediction_binary.ipynb**  
-  Notebook for binary classification tasks.
-
-- **CAL_A_domain_prediction_multiclass.ipynb**  
-  Main notebook for multiclass classification of A, Ak, and CAL domains.  
-  Includes embedding processing, visualization, model training, and evaluation.
+- **A_domain_prediction_KAL.ipynb**  
 
 - **requirements.txt**  
   Python dependencies required to run the project.
@@ -67,16 +63,15 @@ python -m pip install fair-esm
 
 ## Usage
 
-Run the multiclass classification pipeline:
+Run the binary classification pipeline:
 
 ```bash
-jupyter notebook CAL_A_domain_prediction_multiclass.ipynb
+jupyter notebook A_domain_prediction_KAL.ipynb
 ```
 
 The notebook performs:
 - ESM-2 embedding
 - UMAP visualization  
-- Multiclass classification  
 - Cross-validation evaluation  
 - Model saving (`.pkl`)  
 
